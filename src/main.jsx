@@ -11,12 +11,14 @@ import Root from './components/Root.jsx';
 import About from './components/About.jsx';
 import Shop from './components/Shop.jsx';
 import Cart from './components/Cart.jsx';
+import { productsAndCartData } from './loader/getCart&ProductsData.js';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
     errorElement: <ErrorPage></ErrorPage>,
+    loader:productsAndCartData ,
     children: [
       {
         path: "/",
