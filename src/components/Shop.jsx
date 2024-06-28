@@ -26,7 +26,7 @@ const Shop = () => {
       newCart = [...rest, exists]
     }
 
-    setCart(newCart)
+    setCart(newCart) // local storage a set korar pora abr button a click korla oi cart o local storage a set kora and update kora {initial cart}
     console.log(cart)
     addToDb(product.id)
     toast.info('Info: Product Added!', { autoClose: 500 })

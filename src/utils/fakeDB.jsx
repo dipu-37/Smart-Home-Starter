@@ -18,7 +18,12 @@ const addToDb = id => {
     }
     localStorage.setItem('shopping-cart', JSON.stringify(shoppingCart))
   }
-  
+//   key-->  shopping-cart
+//value--->   id: quantaty
+// 623853b2e91c8de578c9245e: 1
+// 623853b21fb149d2ee7b76c7: 2
+// 623853b2239582e48409ccc6: 1
+
   const getStoredCart = () => {
     let shoppingCart = {}
   

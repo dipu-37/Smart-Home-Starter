@@ -5,6 +5,7 @@ export const productsAndCartData = async () => {
   const products = await productsData.json()
 
   const savedCart = getStoredCart()
+  //console.log(savedCart)
   const initialCart = []
   for (const id in savedCart) {
     const foundProduct = products.find(product => product.id === id)
@@ -12,6 +13,7 @@ export const productsAndCartData = async () => {
       const quantity = savedCart[id]
       foundProduct.quantity = quantity
       initialCart.push(foundProduct)
+      //console.log(initialCart)
     }
   }
 
